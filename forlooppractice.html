@@ -5,7 +5,7 @@
 			function createTable()
 			{
 		var content = "";
-			content = "<table border=1 bgcolor='yellow'>";
+			content = "<table border=3 bgcolor='yellow'>";
 			content += "<tr>";
 				c = parseInt(no_of_cells.value);
 			/*for(i=1;i<=c;i++)
@@ -25,14 +25,31 @@
 			t.innerHTML = content;
 			}
 		</script> 
+		<style type="text/css">
+			#t{
+				text-align: center;
+				font-family: segoe UI;
+				color: white;
+			}
+			table{
+				margin-top: 20px;
+				border-collapse: collapse;
+				width: 100%;
+				text-align: center;
+				background: #081F2C;
+				color: white;
+				font-weight: bold;
+			}
+		</style>
 		
 	</head>
 	<body>
-		<div id="t" >
+		<center>
+	<input type="text" id="no_of_cells" style="border-style: none; border: 1px solid #081F2C; margin-right: 10px;border-radius: 3px; height: 50px; width: 200px; font-size: 20pt; font-family: segoe UI; color: #081F2C; text-align: center"><button onClick="createTable()" style="height: 50px; width: 200px; cursor: pointer; background: #081F2C; color: white; border-style: none; border-radius: 3px; font-size: 20pt;">Create Table</button>
+	</center>
+	<div id="t">
 			
 			
-		</div>
-	<input type="text" id="no_of_cells" /><button onClick="createTable()" >Create Table</button>
-				
+	</div>		
 	</body>
 </html>
